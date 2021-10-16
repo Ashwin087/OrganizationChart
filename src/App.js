@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import Data from './data.json'  
+import Header from './Components/Header'
+import OrgTree from './Components/OrgTree'
 
 function App() {
+
+  console.log(Data[0].Organization.Team1.NorthAmerica.Country.Canada.Cities.Toronto.Rep);
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <OrgTree />
     </div>
   );
 }
