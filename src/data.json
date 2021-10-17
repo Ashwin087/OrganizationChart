@@ -25,7 +25,7 @@
 
                             "Team2": {
                                 "Title": "Sales Lead (United States)",
-                                "Status": "Warning",
+                                "Status": "Critical",
                                 "Teams":{
                                     "Team1": {
                                         "Title": "Sales Representative (New York)",
@@ -71,6 +71,10 @@
                                 "Team1": {
                                     "Title": "Sales Representative (Milan)",
                                     "Status": "Normal"
+                                },
+                                "Team2": {
+                                    "Title": "Sales Representative (Rome)",
+                                    "Status": "Warning"
                                 }
                             }
                         }

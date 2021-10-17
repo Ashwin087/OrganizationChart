@@ -8,7 +8,6 @@ const Conditional = (props) => {
         } else if (props.path.Status === "Warning") {
             return "text yellow"
         } else {
-            console.log('this work?')
             return "text"
         }
     }, [props.path.Status])
