@@ -62,27 +62,27 @@ export default OrgTree;
 
 
 
-{/* <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1} />} >
-                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1} />}>
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team1} />} />
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team2} />} />
-                    </TreeNode>
-                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2} />}>
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team1} />} />
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team2} />} />
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team3} />} />
-                    </TreeNode>
-                </TreeNode>
+// {/* <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1} />} >
+//                     <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1} />}>
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team1} />} />
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team2} />} />
+//                     </TreeNode>
+//                     <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2} />}>
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team1} />} />
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team2} />} />
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team3} />} />
+//                     </TreeNode>
+//                 </TreeNode>
 
-                <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2} />}>
-                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1} />}>
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team1} />} />
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team2} />} />
-                    </TreeNode>
-                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2} />}>
-                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2.Teams.Team1} />} />
-                    </TreeNode>
-                </TreeNode> */}
+//                 <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2} />}>
+//                     <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1} />}>
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team1} />} />
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team2} />} />
+//                     </TreeNode>
+//                     <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2} />}>
+//                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2.Teams.Team1} />} />
+//                     </TreeNode>
+//                 </TreeNode> */}
 
 
                 // remove extra orange line
