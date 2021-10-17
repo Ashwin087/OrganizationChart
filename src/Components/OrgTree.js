@@ -1,12 +1,16 @@
 import React from 'react';
 import Data from '../data.json'
 import { Tree, TreeNode } from 'react-organizational-chart';
+import Conditional from './Conditional'
 
 const OrgTree = () => {
+
     return(
+        
         <div className="wrapper">
+            
             <Tree
-                label={<p className="text">{Data[0].Organization.VP}</p>}
+                label={<Conditional path={Data[0].Organization} />}
                 className="treeStyle"
                 lineBorderRadius="10px"
                 lineColor="Orange"
@@ -14,26 +18,26 @@ const OrgTree = () => {
                 lineWidth="5px"
                 nodePadding="1.5rem"
             >
-
-                <TreeNode label={<p className="text">{Data[0].Organization.Team1.Manager}</p>}>
-                    <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.Canada.Lead}</p>}>
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.Canada.Cities.Toronto.Rep}</p>} />
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.Canada.Cities.Vancouver.Rep}</p>} />
+                
+                <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1} />} >
+                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1} />}>
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team1} />} />
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team2} />} />
                     </TreeNode>
-                    <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.US.Lead}</p>}>
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.US.Cities.LA.Rep}</p>} />
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.US.Cities.Dallas.Rep}</p>} />
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team1.NorthAmerica.Country.US.Cities.NY.Rep}</p>} />
+                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2} />}>
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team1} />} />
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team2} />} />
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team2.Teams.Team3} />} />
                     </TreeNode>
                 </TreeNode>
 
-                <TreeNode label={<p className="text">{Data[0].Organization.Team2.Manager}</p>}>
-                    <TreeNode label={<p className="text">{Data[0].Organization.Team2.Europe.Country.Germany.Lead}</p>}>
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team2.Europe.Country.Germany.Cities.Berlin.Rep}</p>} />
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team2.Europe.Country.Germany.Cities.Frankfurt.Rep}</p>} />
+                <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2} />}>
+                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1} />}>
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team1} />} />
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team1.Teams.Team2} />} />
                     </TreeNode>
-                    <TreeNode label={<p className="text">{Data[0].Organization.Team2.Europe.Country.Italy.Lead}</p>}>
-                        <TreeNode label={<p className="text">{Data[0].Organization.Team2.Europe.Country.Italy.Cities.Milan.Rep}</p>} />
+                    <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2} />}>
+                        <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team2.Teams.Team2.Teams.Team1} />} />
                     </TreeNode>
                 </TreeNode>
             </Tree>

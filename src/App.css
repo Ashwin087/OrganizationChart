@@ -8,6 +8,11 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
+.header {
+  text-align: center;
+  padding: 2rem;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -18,30 +23,23 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
   align-items: center;
   height: 60vh;
   font-size: 1.25rem;
+  font-weight: 600;
   max-width: 1500px;
 }
 
-.treeStyle {
-  /* font-size: 1.25rem; */
-  color: red;
-  border: 1px solid blue;
-}
-
 .text {
-  background-color: grey;
+  background-color: lightgreen;
   color: black;
-  border-radius: 5%;
-  padding: 0.5rem;
+  border-radius: 7%;
+  padding: 0.75rem;
   margin: 0 auto;
-  max-width: 250px;
+  max-width: 200px;
 }
 
-.orgTree {
-  /* background-color: red; */
-    /* font-size: 2rem; */
+.red {
+  background-color: rgb(207, 91, 91);
 }
 
-.header {
-  text-align: center;
-  padding-top: 2rem;
+.yellow {
+  background-color: yellow;
 }

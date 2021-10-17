@@ -1,78 +1,75 @@
 [
     {
         "Organization": {
-            "VP": "VP of Sales",
-            "Status": "Critical",
-
-            "Team1": {
-                "Manager": "Sales Manager (North America)",
-                "NorthAmerica": {
+            "Title": "VP of Sales",
+            "Status":"Critical",
+            "Teams": {
+                "Team1": {
+                    "Title": "Sales Manager (North America)",
                     "Status": "Critical",
-                    "Country": {
-                        "Canada": {
-                            "Lead": "Sales Lead (Canada)",
-                            "Status": "Normal",
-                            "Cities":{
-                                "Toronto": {
-                                    "Rep": "Sales Representative (Toronto)",
-                                    "Status": "Normal"
-                                },
-                                "Vancouver": {
-                                    "Rep": "Sales Representative (Vancouver)",
-                                    "Status": "Normal"
+                        "Teams": {
+                            "Team1": {
+                                "Title": "Sales Lead (Canada)",
+                                "Status": "Normal",
+                                "Teams":{
+                                    "Team1": {
+                                        "Title": "Sales Representative (Toronto)",
+                                        "Status": "Normal"
+                                    },
+                                    "Team2": {
+                                        "Title": "Sales Representative (Vancouver)",
+                                        "Status": "Normal"
+                                    }
                                 }
-                            }
-                        },
+                            },
 
-                        "US": {
-                            "Lead": "Sales Lead (United States)",
-                            "Status": "Critical",
-                            "Cities":{
-                                "NY": {
-                                    "Rep": "Sales Representative (New York)",
-                                    "Status": "Warning"
-                                },
-                                "Dallas": {
-                                    "Rep": "Sales Representative (Dallas)",
-                                    "Status": "Critical"
-                                },
-                                "LA": {
-                                    "Rep": "Sales Representative (Los Angeles)",
-                                    "Status": "Critical"
+                            "Team2": {
+                                "Title": "Sales Lead (United States)",
+                                "Status": "Critical",
+                                "Teams":{
+                                    "Team1": {
+                                        "Title": "Sales Representative (New York)",
+                                        "Status": "Warning"
+                                    },
+                                    "Team2": {
+                                        "Title": "Sales Representative (Dallas)",
+                                        "Status": "Critical"
+                                    },
+                                    "Team3": {
+                                        "Title": "Sales Representative (Los Angeles)",
+                                        "Status": "Critical"
+                                    }
                                 }
                             }
-                        }
-                    }
+
                 }
             },
 
-
-            "Team2": {
-                "Manager": "Sales Manager (Europe)",
-                "Europe": {
+                "Team2": {
+                    "Title": "Sales Manager (Europe)",
                     "Status": "Warning",
-                    "Country": {
-                        "Germany": {
-                            "Lead": "Sales Lead (Germany)",
+                    "Teams": {
+                        "Team1": {
+                            "Title": "Sales Lead (Germany)",
                             "Status": "Warning",
-                            "Cities":{
-                                "Berlin": {
-                                    "Rep": "Sales Representative (Berlin)",
+                            "Teams":{
+                                "Team1": {
+                                    "Title": "Sales Representative (Berlin)",
                                     "Status": "Normal"
                                 },
-                                "Frankfurt": {
-                                    "Rep": "Sales Representative (Frankfurt)",
-                                    "Status": "critical"
+                                "Team2": {
+                                    "Title": "Sales Representative (Frankfurt)",
+                                    "Status": "Critical"
                                 }
                             }
                         },
 
-                        "Italy": {
-                            "Lead": "Sales Lead (Italy)",
+                        "Team2": {
+                            "Title": "Sales Lead (Italy)",
                             "Status": "Critical",
-                            "Cities":{
-                                "Milan": {
-                                    "Rep": "Sales Representative (Milan)",
+                            "Teams":{
+                                "Team1": {
+                                    "Title": "Sales Representative (Milan)",
                                     "Status": "Normal"
                                 }
                             }
