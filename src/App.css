@@ -41,3 +41,8 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .yellow {
   background-color: yellow;
 }
+
+ul.css-n4cq1w {
+  /* display: none; */
+  color: white; 
+}

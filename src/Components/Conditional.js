@@ -2,7 +2,7 @@ import { useEffect, useCallback } from "react"
 
 const Conditional = (props) => {
 
-    const colorChecker = useCallback(() => {
+    const statusChecker = useCallback(() => {
         if (props.path.Status === "Critical") {
             return "text red"
         } else if (props.path.Status === "Warning") {
@@ -13,12 +13,12 @@ const Conditional = (props) => {
     }, [props.path.Status])
 
     useEffect(() => {
-        setInterval(colorChecker, 1800000);
-    }, [colorChecker]);
+        setInterval(statusChecker, 1800000);
+    }, [statusChecker]);
 
     return(
         <>
-            <p className={colorChecker()} >{props.path.Title}</p>
+            <p className={statusChecker()} >{props.path.Title}</p>
         </>
     )
 }
