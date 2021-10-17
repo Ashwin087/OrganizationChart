@@ -4,11 +4,8 @@ import { Tree, TreeNode } from 'react-organizational-chart';
 import Conditional from './Conditional'
 
 const OrgTree = () => {
-
     return(
-        
-        <div className="wrapper">
-            
+        <div className="wrapper"> 
             <Tree
                 label={<Conditional path={Data[0].Organization} />}
                 className="treeStyle"
@@ -18,7 +15,6 @@ const OrgTree = () => {
                 lineWidth="5px"
                 nodePadding="1.5rem"
             >
-                
                 <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1} />} >
                     <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1} />}>
                         <TreeNode label={<Conditional path={Data[0].Organization.Teams.Team1.Teams.Team1.Teams.Team1} />} />
